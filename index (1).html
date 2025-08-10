@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AleMassage - Professional Massage Therapy in Denver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .quiz-option.selected {
+            background-color: #8b5cf6;
+            color: white;
+            border-color: #7c3aed;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-link:hover {
+            color: #8b5cf6;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://find-your-rom.massagetherapy.com/images/logo.jpg" alt="AleMassage Logo" class="h-12 mr-3">
+                <span class="text-xl font-bold text-gray-800">AleMassage</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link text-gray-700 hover:text-amber-500 transition">Home</a>
+                <a href="#services" class="nav-link text-gray-700 hover:text-amber-500 transition">Services</a>
+                <a href="#hours" class="nav-link text-gray-700 hover:text-amber-500 transition">Hours</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-amber-500 transition">About</a>
+                <a href="#testimonials" class="nav-link text-gray-700 hover:text-amber-500 transition">Testimonials</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-amber-500 transition">Contact</a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-white w-full px-4 pb-4">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-amber-500">Home</a>
+            <a href="#services" class="block py-2 text-gray-700 hover:text-amber-500">Services</a>
+            <a href="#hours" class="block py-2 text-gray-700 hover:text-amber-500">Hours</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-amber-500">About</a>
+            <a href="#testimonials" class="block py-2 text-gray-700 hover:text-amber-500">Testimonials</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-amber-500">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Relaxation Blossoms Here</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Allow yourself the time of day to be stress free and rejuvenated</p>
+            <a href="https://book.squareup.com/appointments/7u462dfqesnw4e/location/L9XMQJ2FT7QGV/services" target="_blank" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
+                Book Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-lg md:text-xl text-gray-700 mb-8">
+                    "If being a massage therapist has taught me anything, it's that everybody needs them, but not everybody has time for them. I would love to help with any pain, soreness, or discomfort you may experience."
+                </p>
+                <p class="text-lg md:text-xl text-gray-700">
+                    I may or may not be your cup of tea, but I'm confident you will get some relief! Book right now and let me help you get on the right path to pain free days!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Services & Rates</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-500 text-4xl mb-4">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Swedish Massage</h3>
+                    <p class="text-gray-600 mb-4">A relaxing, full-body massage that promotes overall relaxation and improves circulation.</p>
+                    <p class="text-purple-600 font-bold">$105 - 60 min</p>
+                    <p class="text-purple-600 font-bold">$135 - 90 min</p>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-500 text-4xl mb-4">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Deep Tissue Massage</h3>
+                    <p class="text-gray-600 mb-4">Targets deeper layers of muscle and connective tissue to relieve chronic tension.</p>
+                    <p class="text-purple-600 font-bold">$105 - 60 min</p>
+                    <p class="text-purple-600 font-bold">$135 - 90 min</p>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-500 text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Reflexology</h3>
+                    <p class="text-gray-600 mb-4">Specialized foot massage targeting reflex points that correspond to different body organs.</p>
+                    <p class="text-purple-600 font-bold">$70 - 30 min</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Add-ons</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <p class="text-gray-600"><span class="font-medium">Aromatherapy:</span> $12 / 60 minutes</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-600"><span class="font-medium">CBD Add-on:</span> $15 / 60 minutes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Package Rates</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold mb-2">60 Minute Packages</h4>
+                        <p class="text-gray-600 mb-1">5 Pack = $500</p>
+                        <p class="text-gray-600 mb-1">7 Pack = $686</p>
+                        <p class="text-gray-600">10 Pack = $950</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2">90 Minute Packages</h4>
+                        <p class="text-gray-600 mb-1">5 Pack = $625</p>
+                        <p class="text-gray-600 mb-1">7 Pack = $826</p>
+                        <p class="text-gray-600">10 Pack = $1150</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 mt-4 text-sm">
+                    Note: Packages are non-refundable and can be paid in installments. They can also be shared within family and friends. They also don't expire!
+                </p>
+            </div>
+            
+            <div class="mt-12 bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Benefits Of Massage</h3>
+                <p class="text-gray-600 mb-4">
+                    Experts estimate that upwards of ninety percent of disease is stress-related. And perhaps nothing ages us faster, internally and externally, than high stress. Massage is an effective tool for managing this stress, which translates into:
+                </p>
+                <ul class="grid md:grid-cols-2 gap-4 text-gray-600 mb-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Decreased anxiety</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Enhanced sleep quality</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Greater energy</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Improved concentration</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Increased circulation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Reduced fatigue</span>
+                    </li>
+                </ul>
+                <p class="text-gray-600 mb-4">
+                    Massage can also help specifically address a number of health issues. Bodywork can:
+                </p>
+                <ul class="grid md:grid-cols-2 gap-4 text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Alleviate low-back pain and improve range of motion</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Assist with shorter, easier labor for expectant mothers</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Ease medication dependence</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Enhance immunity by stimulating lymph flow</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Exercise and stretch weak, tight, or atrophied muscles</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Help athletes prepare for and recover from workouts</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Improve the condition of the body's largest organ—the skin</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Increase joint flexibility</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Lessen depression and anxiety</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Promote tissue regeneration, reducing scar tissue</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Pump oxygen and nutrients into tissues and vital organs</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Reduce postsurgery adhesions and swelling</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Reduce spasms and cramping</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Relax and soften injured, tired, and overused muscles</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Release endorphins—the body's natural painkiller</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mt-1 mr-2"></i>
+                        <span>Relieve migraine pain</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="https://book.squareup.com/appointments/7u462dfqesnw4e/location/L9XMQJ2FT7QGV/services" target="_blank" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section id="hours" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Hours & Scheduling</h2>
+            
+            <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-sm">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Business Hours</h3>
+                        <ul class="space-y-3">
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Sunday</span>
+                                <span class="font-medium">Closed</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Monday</span>
+                                <span class="font-medium">12:00 PM - 6:30 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Tuesday</span>
+                                <span class="font-medium">12:00 PM - 6:30 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Wednesday</span>
+                                <span class="font-medium">12:00 PM - 6:30 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Thursday</span>
+                                <span class="font-medium">12:00 PM - 6:30 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Friday</span>
+                                <span class="font-medium">Closed</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Saturday</span>
+                                <span class="font-medium">Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Book Your Session</h3>
+                        <p class="text-gray-600 mb-4">Appointments can be scheduled online or by phone.</p>
+                        <a href="tel:7209613771" class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://i.postimg.cc/LXSpkNvj/Screenshot-2025-08-04-at-3-45-57-AM.png" alt="Alejandra Ramirez, Massage Therapist" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">About The Practitioner</h2>
+                    <p class="text-gray-600 mb-4">Hello! My name is Alejandra Ramirez. I'm a Colorado native and speak fluent Spanish. I've been a Licensed Massage Therapist (LMT) since 2018.</p>
+                    <p class="text-gray-600 mb-4">I absolutely love what I do and it's rewarding helping people reach their wellness goals. I utilize a variety of techniques and modalities including: Swedish, Deep Tissue, Medical/Sports massage, Myofascial Release, Trigger Point, Lymphatic Drainage and Scalp massage, as well as Aromatherapy, Reflexology and a dash of pure energy transference.</p>
+                    <p class="text-gray-600 mb-4">I make sure to regularly check with my clients for the correct pressure desired during their sessions, and give them take home tips to help prevent and alleviate any further pain or discomfort.</p>
+                    <p class="text-gray-600 mb-6">Contact me today to book a session and let's get you the right cup of tea!</p>
+                    <img src="https://find-your-rom.massagetherapy.com/img/abmp-certified-logo.png" alt="ABMP Certified" class="h-16">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Client Testimonials</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Alejandra has magic hands! My chronic back pain has improved dramatically after just a few sessions. Highly recommend!"</p>
+                    <p class="font-medium text-gray-800">- Sarah J.</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The most relaxing experience I've ever had. The atmosphere is peaceful and Alejandra is incredibly professional."</p>
+                    <p class="font-medium text-gray-800">- Michael T.</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"I've been to many massage therapists over the years, and Alejandra stands out for her attention to detail and intuitive touch."</p>
+                    <p class="font-medium text-gray-800">- Emily R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="py-16 bg-purple-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Find Your Perfect Massage Match</h2>
+            
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div id="quiz-container">
+                    <div class="quiz-step active" data-step="1" data-multi-select="true">
+                        <h3 class="text-xl font-bold mb-6">1. What brings you in for a massage today? (Choose one or more)</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <button class="quiz-option bg-gray-100 hover:bg-purple-100 border border-gray-300 rounded-lg p-4 text-left transition">
+                                <span class="text-xl mr-2">🛋</span> I need to relax and unwind
+                            </button>
+                            <button class="quiz-option bg-gray-100 hover:bg-purple-100 border border-gray-300 rounded-lg p-4 text-left transition">
+                                <span class="text-xl mr-2">💪</span> I have muscle pain or stiffness
+                            </button>
+                            <button class="quiz-option bg-gray-100 hover:bg-purple-100 border border-gray-300 rounded-lg p-4 text-left transition">
+                                <span class="text-xl mr-2">🏃‍♂️</span> I'm recovering from a workout or injury
+                            </button>
+                            <button class="quiz-option bg-gray-100 hover:bg-purple-100 border border-gray-300 rounded-lg p-4 text-left transition">
+                                <span class="text-xl mr-2">😴</span> I've been feeling drained or low-energy
+                            </button>
+                            <button class="quiz-option bg-gray-100 hover:bg-purple-100 border border-gray-300 rounded-lg p-4 text-left transition">
+                                <span class="text-xl mr-2">🧠</span> I'm stressed or anxious
+                            </button>
+                            <button class="quiz-option bg-gray-100 hover:bg-purple-100 border border-gray-300 rounded-lg p-4 text-left transition">
+                                <span class="text-xl mr-2">💆‍♀️</span> I want a little of everything!
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional quiz steps would be added here in the same pattern -->
+                </div>
+                
+                <div class="flex justify-between mt-8">
+                    <button id="quiz-prev" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-6 rounded transition opacity-0 cursor-default">
+                        Previous
+                    </button>
+                    <button id="quiz-next" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-6 rounded transition">
+                        Next
+                    </button>
+                </div>
+                
+                <div id="quiz-results" class="hidden mt-8 p-6 bg-purple-100 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Your Perfect Massage Match</h3>
+                    <div id="result-content" class="text-gray-700"></div>
+                    <a href="https://book.squareup.com/appointments/7u462dfqesnw4e/location/L9XMQJ2FT7QGV/services" target="_blank" class="mt-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-6 rounded transition inline-block">
+                        Book Your Recommended Session
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Contact Information</h2>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Get In Touch</h3>
+                    <div class="mb-6">
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-phone-alt text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <p class="text-gray-600">Phone</p>
+                                <a href="tel:7209613771" class="text-gray-800 font-medium hover:text-amber-500 transition">(720) 961-3771</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-map-marker-alt text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <p class="text-gray-600">Location</p>
+                                <p class="text-gray-800 font-medium">1776 S Jackson St Suite 202<br>Denver, CO 80210</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <p class="text-gray-600">Email</p>
+                                <a href="mailto:alemassage2023@gmail.com" class="text-gray-800 font-medium hover:text-amber-500 transition">alemassage2023@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4">
+                        <a href="https://share.google/lxdJe3hIg5ctjOQuD" class="text-gray-700 hover:text-purple-500 transition" aria-label="Google">
+                            <i class="fab fa-google text-2xl"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.4409545908366!2d-104.94533742389167!3d39.68478847156667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7fc0c7326969%3A0x8a2ad24fcfab677e!2sAleMassage!5e0!3m2!1sen!2sus!4v1754847443611!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="mt-6">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/alemassage2023/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/alemassage2023/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"><div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/alemassage2023/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">Alejandra AleMassage</a> (@<a href="https://www.instagram.com/alemassage2023/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">alemassage2023</a>) • Instagram photos and videos</p></div></blockquote>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Send a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                        </div>
+                        <a href="https://book.squareup.com/appointments/7u462dfqesnw4e/location/L9XMQJ2FT7QGV/services" target="_blank" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-6 rounded transition duration-300 inline-block">
+                            Book Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <img src="https://find-your-rom.massagetherapy.com/images/logo.jpg" alt="AleMassage Logo" class="h-10 mr-3">
+                        <span class="text-xl font-bold">AleMassage</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">Relaxation blossoms here!</p>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">Member, Associated Bodywork & Massage Professionals</p>
+                    <p class="text-gray-400 mt-1">© Copyright 2025 AleMassage. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Quiz functionality
+        const quizData = [
+            {
+                question: "What brings you in for a massage today? (Choose one or more)",
+                options: [
+                    { emoji: "🛋", text: "I need to relax and unwind" },
+                    { emoji: "💪", text: "I have muscle pain or stiffness" },
+                    { emoji: "🏃‍♂️", text: "I'm recovering from a workout or injury" },
+                    { emoji: "😴", text: "I've been feeling drained or low-energy" },
+                    { emoji: "🧠", text: "I'm stressed or anxious" },
+                    { emoji: "💆‍♀️", text: "I want a little of everything!" }
+                ],
+                multiSelect: true
+            },
+            // Additional questions would be added here
+        ];
+
+        const quizResults = {
+            "Relax & Unwind": "Swedish + Aromatherapy + Scalp Massage",
+            "Tension Relief": "Deep Tissue + Trigger Point + Myofascial Release",
+            "Athlete's Recovery": "Sports Massage + Stretching + Lymphatic Drainage",
+            "Holistic Healing": "Reflexology + Energy Transference + Aromatherapy",
+            "Pain Management": "Medical Massage + Myofascial Release + Custom Care"
+        };
+
+        // Handle quiz option selection
+        document.querySelectorAll('.quiz-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const currentStep = document.querySelector('.quiz-step.active');
+                const isMultiSelect = currentStep.dataset.multiSelect === 'true';
+                
+                if (isMultiSelect) {
+                    this.classList.toggle('selected');
+                } else {
+                    document.querySelectorAll('.quiz-step.active .quiz-option').forEach(opt => {
+                        opt.classList.remove('selected');
+                    });
+                    this.classList.add('selected');
+                }
+            });
+        });
+
+        // Quiz navigation
+        let currentStep = 1;
+        const totalSteps = document.querySelectorAll('.quiz-step').length;
+
+        document.getElementById('quiz-next').addEventListener('click', function() {
+            if (currentStep < totalSteps) {
+                document.querySelector(`.quiz-step[data-step="${currentStep}"]`).classList.remove('active');
+                currentStep++;
+                document.querySelector(`.quiz-step[data-step="${currentStep}"]`).classList.add('active');
+                document.getElementById('quiz-prev').classList.remove('opacity-0', 'cursor-default');
+                
+                if (currentStep === totalSteps) {
+                    this.textContent = 'Get Results';
+                }
+            } else {
+                // Calculate and show results
+                showResults();
+                // Hide the next button
+                this.style.display = 'none';
+            }
+        });
+
+        document.getElementById('quiz-prev').addEventListener('click', function() {
+            if (currentStep > 1) {
+                document.querySelector(`.quiz-step[data-step="${currentStep}"]`).classList.remove('active');
+                currentStep--;
+                document.querySelector(`.quiz-step[data-step="${currentStep}"]`).classList.add('active');
+                
+                if (currentStep === 1) {
+                    this.classList.add('opacity-0', 'cursor-default');
+                }
+                
+                document.getElementById('quiz-next').textContent = 'Next';
+            }
+        });
+
+        function showResults() {
+            // Simple result calculation - in a real app this would be more sophisticated
+            const result = "Relax & Unwind"; // Default result
+            document.getElementById('result-content').textContent = quizResults[result];
+            document.getElementById('quiz-results').classList.remove('hidden');
+            document.querySelector('.quiz-step.active').classList.add('hidden');
+        }
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=hilerio12345/alemassage-website" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
